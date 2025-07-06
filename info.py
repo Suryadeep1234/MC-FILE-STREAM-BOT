@@ -13,20 +13,20 @@ def is_enabled(value, default):
 #---------------------------------------------------------------
 #---------------------------------------------------------------         ,
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', '')
+API_ID = int(environ.get('API_ID', '28978038'))
+API_HASH = environ.get('API_HASH', 'dd7fa173882b6e3d3ccb0c70ccf6d626')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7637309577:AAH2UHaMqnQyJfoXy5Sy9Azqa0IYlIZewXA')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7259766556 7336971189 7348205141').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7404203924').split()]
 USERNAME = environ.get('USERNAME', "https://t.me/ZaraflixAdmin") # ADMIN USERNAME
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002642371814'))
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+OuVU2Bl2j8Y4Nzk1')
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002642371814 -1002801485626').split()]
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/MC_MOVIES_PVT')
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002598175852').split()]
 #---------------------------------------------------------------
 #---------------------------------------------------------------#kdj
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://MovieClub:MovieClub@cluster0.dau2bnj.mongodb.net/MovieClub?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_NAME = environ.get('DATABASE_NAME', "MovieClub")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'My_Tg_files')
 #SECOND_DATABASE_URI = environ.get('SECOND_DATABASE_URI', "")
 #SECOND_DATABASE_NAME = environ.get('SECOND_DATABASE_NAME', "SECOND_DB")
@@ -34,15 +34,15 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'My_Tg_files')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 #----------- There will be channel id add in all these ---------
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002642371814'))  # set shortner log channel
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002727969724'))  # set shortner log channel
 DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','0')) # The movie you upload in it will be deleted from the bot.
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '0'))
 auth_channel = environ.get('AUTH_CHANNEL', '0')
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002609213044'))
-request_channel = environ.get('REQUEST_CHANNEL', '-1002609213044') # If anyone sends a request message to your bot, you will get it in this channel.
-REQ_CHANNEL = environ.get('REQ_CHANNEL','-1002692803410')
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002609213044')) # 
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/Zaraflix') #Support group link ( make sure bot is admin )
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002718911113'))
+request_channel = environ.get('REQUEST_CHANNEL', '-1002718911113') # If anyone sends a request message to your bot, you will get it in this channel.
+REQ_CHANNEL = environ.get('REQ_CHANNEL','0')
+MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002718911113')) # 
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/MC_MOVIES_PVT') #Support group link ( make sure bot is admin )
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 IS_VERIFY = is_enabled('IS_VERIFY', True)
@@ -51,12 +51,12 @@ TUTORIAL = environ.get("TUTORIAL", "https://t.me/Zaraflix_Movie/2")
 TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/Zaraflix_Movie/2")
 TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/Zaraflix_Movie/2")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
-SHORTENER_API = environ.get("SHORTENER_API", "ec422b5d760c01bbb755208935a9d21b461fdca5")
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", 'yummyurl.com')
-SHORTENER_API2 = environ.get("SHORTENER_API2", "ec422b5d760c01bbb755208935a9d21b461fdca5")
-SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", 'yummyurl.com')
-SHORTENER_API3 = environ.get("SHORTENER_API3", "ec422b5d760c01bbb755208935a9d21b461fdca5")
-SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", 'yummyurl.com')
+SHORTENER_API = environ.get("SHORTENER_API", "fa7b06fadcb10ca159f29be425adcbae662469b5")
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", 'gplinks.com')
+SHORTENER_API2 = environ.get("SHORTENER_API2", "fa7b06fadcb10ca159f29be425adcbae662469b5")
+SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", 'gplinks.com')
+SHORTENER_API3 = environ.get("SHORTENER_API3", "fa7b06fadcb10ca159f29be425adcbae662469b5")
+SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", 'gplinks.com')
 TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "14400"))
 THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "14400"))
 #---------------------------------------------------------------
